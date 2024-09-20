@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>INST377-Lab 4</title>
+        <h1 id="add-text"> INST377-Lab 4</h1>
+        <link rel = "stylesheet" href ="INST377_Lab4.css">
+    </head>
+
+    <body>
+        
+        <div class="firstName">
+        <form name="nameForm" onsubmit="return(nameValidation())">
+            <label>First Name</label>
+            <input type="text" placeholder="Name" id="firstName">
+            <br>
+
+            <button> Alert Me!</button>
+        </form>
+
+        <script type="text/javascript">
+            function nameValidation() {
+                var firstName = document.getElementById('firstName').value; 
+                if(firstName) {
+                    alert('Hi ' + firstName +'!');
+                } else {
+                    return true; 
+                }
+                
+            }
+        </script>
+        </div>
+
+
+
+        <div class="change-color">
+        <h1 id="color-section" style="color:cadetblue"></h1>
+        <button onclick="changeColor()">CHANGE COLOR</button>
+
+        <script type="text/javascript">
+            function changeColor() {
+                if(document.body.style.backgroundColor == 'cadetblue') {
+                    const t = document.body.style.backgroundColor = 'green';
+                } else {
+                    const t = document.body.style.backgroundColor = 'cadetblue';
+                }
+            }
+        </script>
+        </div>
+
+
+
+        <div class="textTester">
+        <form name="textTester" onsubmit="return(formValidation())">
+            <label>Text Tester</label>
+            <input type="text" placeholder="Text" id="textTester">
+            <br>
+
+            <button> Validate Text</button>
+        </form>
+
+
+        <script type="text/javascript">
+            function formValidation() {
+                var input = document.getElementById("textTester").value;
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                if(validation.test(input)) {
+                    alert('How about.... nah :(');
+                } else {
+                    return true; 
+
+                }
+
+            }
+        </script>
+        </div>
+
+        <div class="add-text">
+        <h1 id="add-text-section"></h1>
+        <button onclick="addtext()">Add Text</button>
+
+        <script type="text/javascript">
+            function addtext() {
+                document.getElementById("add-text").innerHTML+=  "Add Text";
+            }
+        </script>
+        </div>
+    </body>
+</html>
+
+
+
+<!-- 
+format sections
+add text only once
+  -->

@@ -1,0 +1,90 @@
+body{
+    background-color: cadetblue;
+}
+
+.firstName {
+    background-color: burlywood;
+    border: 10px solid whitesmoke;
+
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.firstName button {
+    position: absolute;
+    top: 0;
+    right: 100;
+    cursor: pointer;
+    margin-top: 10px;
+    /* margin-left: 20px; */
+    align-items: center;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+
+}
+
+/* .firstName input button { */
+    /* align-items: center; */
+    /* text-align: center; */
+/* } */
+
+
+
+
+
+
+
+
+.change-color {
+    background-color: burlywood;
+    border: 10px solid whitesmoke;
+    float: right;
+    text-align: center;
+    width: 40%;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+.textTester {
+    background-color: burlywood;
+    border: 10px solid whitesmoke;
+
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.textTester button {
+    position: absolute;
+    top: 0;
+    right: 80;
+    cursor: pointer;
+    margin-top: 10px;
+    /* margin-left: 20px; */
+    align-items: center;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+
+}
+
+
+
+.add-text {
+    background-color: burlywood;
+    border: 10px solid whitesmoke;
+    text-align: center;
+    float: right;
+    width: 40%;
+    padding: 5px;
+    margin: 10px;
+}
