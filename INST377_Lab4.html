@@ -13,21 +13,26 @@
             <input type="text" placeholder="Name" id="firstName">
             <br>
 
-            <button> Alert Me!</button>
+            <button type="submit"> Alert Me!</button>
         </form>
 
         <script type="text/javascript">
             function nameValidation() {
-                var firstName = document.getElementById('firstName').value; 
+                const firstName = document.getElementById('firstName').value; 
                 if(firstName) {
                     alert('Hi ' + firstName +'!');
                 } else {
-                    return true; 
-                }
+                    alert('Please enter your first name.');
+                 
+                } 
+                return false;
+            
+            
                 
             }
         </script>
         </div>
+
 
 
 
@@ -38,10 +43,11 @@
         <script type="text/javascript">
             function changeColor() {
                 if(document.body.style.backgroundColor == 'cadetblue') {
-                    const t = document.body.style.backgroundColor = 'green';
+                    document.body.style.backgroundColor = 'green';
                 } else {
-                    const t = document.body.style.backgroundColor = 'cadetblue';
+                    document.body.style.backgroundColor = 'cadetblue';
                 }
+                return false; 
             }
         </script>
         </div>
@@ -60,14 +66,15 @@
 
         <script type="text/javascript">
             function formValidation() {
-                var input = document.getElementById("textTester").value;
+                const input = document.getElementById("textTester").value;
                 var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
                 if(validation.test(input)) {
                     alert('How about.... nah :(');
                 } else {
-                    return true; 
+                    return false; 
 
                 }
+                return false;
 
             }
         </script>
@@ -85,10 +92,3 @@
         </div>
     </body>
 </html>
-
-
-
-<!-- 
-format sections
-add text only once
-  -->
