@@ -1,0 +1,36 @@
+body{
+    background-color: cadetblue;
+}
+
+.firstName, .change-color, .textTester, .add-text{
+    background-color: burlywood;
+    border: 10px solid whitesmoke;
+    text-align: center;
+    width: 40%;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.add-text, .change-color {
+    float: right;
+}
+
+.add-text {
+    margin-top: -77px;
+}
+
+.firstName button {
+    position: absolute;
+    top: -5;
+    right: 100;
+    margin-top: 10px;
+}
+
+.textTester button {
+    position: absolute;
+    top: -5;
+    right: 80;
+    margin-top: 10px;
+}
